@@ -73,7 +73,7 @@ const mongoose = require('mongoose')
  */
 
 const admissionPlanSchema = new mongoose.Schema(
-  { 
+  {
     schoolYear: [{
       type: mongoose.Schema.Types.ObjectId,
       ref: "SchoolYear"
@@ -89,6 +89,5 @@ const admissionPlanSchema = new mongoose.Schema(
     timestamps: true
   }
 )
-
 const AdmissionPlan = mongoose.model('AdmissionPlan', admissionPlanSchema);
 module.exports = AdmissionPlan

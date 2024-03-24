@@ -53,7 +53,6 @@ const admissionMethodSchema = new mongoose.Schema(
     timestamps: true
   },
   
-
 )
 
 const AdmissionMethod = mongoose.model('AdmissionMethod', admissionMethodSchema);
